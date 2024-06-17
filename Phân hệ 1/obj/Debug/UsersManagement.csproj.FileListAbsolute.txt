@@ -1,0 +1,54 @@
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.csproj.AssemblyReference.cache
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.csproj.SuggestedBindingRedirects.cache
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.exe.config
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.Properties.Resources.resources
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.UsersAndRoles.resources
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.csproj.GenerateResource.cache
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.csproj.CoreCompileInputs.cache
+E:\trietmlRoot\App\UsersManagement\bin\Debug\UsersManagement.exe.config
+E:\trietmlRoot\App\UsersManagement\bin\Debug\UsersManagement.exe
+E:\trietmlRoot\App\UsersManagement\bin\Debug\UsersManagement.pdb
+E:\trietmlRoot\App\UsersManagement\bin\Debug\NuGet.Frameworks.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Memory.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Text.Json.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Numerics.Vectors.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Buffers.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.ValueTuple.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Text.Encodings.Web.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\trietmlRoot\App\UsersManagement\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersMan.951B1457.Up2Date
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.exe
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.pdb
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.AddUser.resources
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.EditUser.resources
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.AddRole.resources
+E:\trietmlRoot\App\UsersManagement\obj\Debug\UsersManagement.EditRole.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\UsersManagement.exe.config
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\UsersManagement.exe
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\UsersManagement.pdb
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\NuGet.Frameworks.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\System.Memory.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\System.Numerics.Vectors.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\System.Buffers.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\System.ValueTuple.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.csproj.AssemblyReference.cache
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.csproj.SuggestedBindingRedirects.cache
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.exe.config
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.AddRole.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.AddUser.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.EditRole.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.EditUser.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.Properties.Resources.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.UsersAndRoles.resources
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.csproj.GenerateResource.cache
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.csproj.CoreCompileInputs.cache
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.csproj.CopyComplete
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.exe
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.pdb
+E:\document\Mon hoc\An và Bảo mật httt\project\triet\Oracle-DB-Server-Manager\obj\Debug\UsersManagement.LoginUi.resources
