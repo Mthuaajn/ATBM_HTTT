@@ -1,0 +1,9 @@
+D:\Github\ATBM_HTTT\src\DTO\bin\Debug\DTO.exe.config
+D:\Github\ATBM_HTTT\src\DTO\bin\Debug\DTO.exe
+D:\Github\ATBM_HTTT\src\DTO\bin\Debug\DTO.pdb
+D:\Github\ATBM_HTTT\src\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Github\ATBM_HTTT\src\DTO\obj\Debug\DTO.Properties.Resources.resources
+D:\Github\ATBM_HTTT\src\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+D:\Github\ATBM_HTTT\src\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Github\ATBM_HTTT\src\DTO\obj\Debug\DTO.exe
+D:\Github\ATBM_HTTT\src\DTO\obj\Debug\DTO.pdb

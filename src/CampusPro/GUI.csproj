@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D75CF78-35D2-4B9B-8731-0B110DD0CED5}</ProjectGuid>
+    <ProjectGuid>{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CampusPro</RootNamespace>
     <AssemblyName>CampusPro</AssemblyName>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NuGet.Frameworks, Version=6.10.0.107, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\NuGet.Frameworks.6.10.0\lib\net472\NuGet.Frameworks.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +66,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,11 +82,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
-      <Project>{98a2caeb-c1b8-4199-83a9-933aaea39e04}</Project>
+      <Project>{c798dcf1-3f87-4b58-a14d-e05911387333}</Project>
       <Name>BUS</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{e680de5d-41be-475b-92eb-fb9047d6b391}</Project>
+      <Project>{5d3dac80-22bb-492b-9bfa-38fa6c742486}</Project>
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3DAC80-22BB-492B-9BFA-38FA6C742486}|..\\DTO\\DTO.csproj|d:\\github\\atbm_httt\\src\\dto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|CampusPro.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|CampusPro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DTO\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\DTO\\Form1.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DTO\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\DTO\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T17:00:43.136Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\Form1.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\DAO\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T17:00:30.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\BUS\\Form1.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\BUS\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:59:44.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:59:20.229Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

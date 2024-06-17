@@ -1,0 +1,16 @@
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\BUS.exe.config
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\BUS.exe
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\BUS.pdb
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\DAO.exe
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\DTO.exe
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\DAO.pdb
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\DAO.exe.config
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\DTO.pdb
+D:\Github\ATBM_HTTT\src\BUS\bin\Debug\DTO.exe.config
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.Properties.Resources.resources
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.exe
+D:\Github\ATBM_HTTT\src\BUS\obj\Debug\BUS.pdb

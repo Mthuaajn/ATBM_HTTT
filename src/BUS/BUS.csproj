@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98A2CAEB-C1B8-4199-83A9-933AAEA39E04}</ProjectGuid>
+    <ProjectGuid>{C798DCF1-3F87-4B58-A14D-E05911387333}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>BUS</RootNamespace>
     <AssemblyName>BUS</AssemblyName>
@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,12 +77,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAO.csproj">
-      <Project>{d4ac12b7-67ba-4334-9bd2-d84ba2bd3e8f}</Project>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{134b5fed-cc98-4313-be12-26217b496b9a}</Project>
       <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{e680de5d-41be-475b-92eb-fb9047d6b391}</Project>
+      <Project>{5d3dac80-22bb-492b-9bfa-38fa6c742486}</Project>
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
