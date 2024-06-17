@@ -5,6 +5,7 @@ Brief description of your WinForms application.
 
 ## Installation
 ### System requirements:
+- NuGet.Framework 6.10.0
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 - [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) version 4.8.
 - [Oracle Database XE 21c](https://www.oracle.com/database/technologies/appdev/xe.html) (Oracle SQL Developer for optional).
