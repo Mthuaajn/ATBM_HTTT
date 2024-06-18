@@ -8,14 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BUS;
-using DAO;
+using SystemUsersBUS = BUS.SystemUsersBUS;
 
 namespace UsersManagement
 {
     public partial class RevokeRoleFromUser : Form
     {
 
+        SystemUsersBUS systemUsers = new SystemUsersBUS();
         public string UsernameSelected { get; set; }
         public RevokeRoleFromUser()
         {
@@ -25,14 +25,9 @@ namespace UsersManagement
 
         private void GetRole()
         {
-            Modify modify = new Modify();
-            string query = "SELECT DRP.GRANTED_ROLE " +
-                            "FROM DBA_USERS U LEFT JOIN DBA_ROLE_PRIVS DRP ON U.USERNAME = DRP.GRANTEE " +
-                            "WHERE U.USERNAME = '" + UsernameSelected + "' AND DRP.GRANTED_ROLE IS NOT NULL";
-            DataTable dataTable = new DataTable();
-            dataTable = modify.LoadTable(query);
+            
             selectRoleComboBox.ValueMember = "GRANTED_ROLE";
-            selectRoleComboBox.DataSource = dataTable;
+            selectRoleComboBox.DataSource = systemUsers.GetRoleOfSelectedUser(UsernameSelected);
         }
 
         private void RevokeRoleFromUser_Load(object sender, EventArgs e)
@@ -53,31 +48,17 @@ namespace UsersManagement
 
             if (MessageBox.Show("Are you sure you want to revoke this role from the above user?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-
                 try
                 {
-                    using (OracleConnection oracleConnection = Connection.GetOracleConnection())
-                    {
-                        oracleConnection.Open();
-                        string query = $"REVOKE {role} FROM {username}";
-
-                        using (OracleCommand command = new OracleCommand(query, oracleConnection))
-                        {
-                            command.ExecuteNonQuery();
-                            MessageBox.Show("Role revoked successfully.");
-                        }
-                        oracleConnection.Close();
-                    }
+                    systemUsers.RevokeRole(username, role);
+                    MessageBox.Show("Role revoked successfully.");
                     // Exit adding window
                     this.Hide();
-
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error revoking role: " + ex.Message);
                 }
-
             }
         }
     }

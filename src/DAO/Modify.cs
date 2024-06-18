@@ -35,5 +35,17 @@ namespace DAO
             }
             return dataTable;
         }
+        public void ExecuteQuery(string query) // Thuc thi cau lenh
+        {
+            using (OracleConnection oracleConnection = Connection.GetOracleConnection())
+            {
+                oracleConnection.Open();
+                using (OracleCommand command = new OracleCommand(query, oracleConnection))
+                {
+                    command.ExecuteNonQuery();
+                }
+                oracleConnection.Close();
+            }
+        }
     }
 }

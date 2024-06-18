@@ -13,7 +13,7 @@ namespace UsersManagement
 {
     public partial class SystemUsers : Form
     {
-        private SystemUsersBUS systemUsers; // Doi tuong tu bus de xu ly logic
+        private SystemUsersBUS systemUsers; // Đối tượng từ BUS để xử lý logic
         private string UserName;
         public SystemUsers()
         {

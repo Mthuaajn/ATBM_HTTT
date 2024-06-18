@@ -3,25 +3,21 @@
   "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\revokerolefromuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:revokerolefromuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\systemusersbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\systemusersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\systemusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:systemusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,30 +27,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RevokeRoleFromUser.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\RevokeRoleFromUser.cs",
-              "RelativeDocumentMoniker": "RevokeRoleFromUser.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\RevokeRoleFromUser.cs",
-              "RelativeToolTip": "RevokeRoleFromUser.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowBgAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "GrantRoleForUser.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
+              "RelativeDocumentMoniker": "GrantRoleForUser.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs [Design]",
+              "RelativeToolTip": "GrantRoleForUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T17:16:35.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T19:09:48.588Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Modify.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Modify.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\Modify.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Modify.cs",
+              "RelativeToolTip": "..\\DAO\\Modify.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T18:48:47.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GrantRoleForUser.cs",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
               "RelativeDocumentMoniker": "GrantRoleForUser.cs",
               "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
               "RelativeToolTip": "GrantRoleForUser.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAxwCAAAAAjAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAkwBIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T17:16:18.763Z",
               "EditorCaption": ""
@@ -65,50 +73,24 @@
               "Title": "SystemUsersBUS.cs",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs",
               "RelativeDocumentMoniker": "..\\BUS\\SystemUsersBUS.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs",
-              "RelativeToolTip": "..\\BUS\\SystemUsersBUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAJAAAA",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs*",
+              "RelativeToolTip": "..\\BUS\\SystemUsersBUS.cs*",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwD8AAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T16:39:14.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SystemUsersDAO.cs",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs",
               "RelativeDocumentMoniker": "..\\DAO\\SystemUsersDAO.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs",
-              "RelativeToolTip": "..\\DAO\\SystemUsersDAO.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAAdAAAA",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs*",
+              "RelativeToolTip": "..\\DAO\\SystemUsersDAO.cs*",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwEoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T16:09:50.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
-              "RelativeDocumentMoniker": "..\\DAO\\Connection.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
-              "RelativeToolTip": "..\\DAO\\Connection.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T14:11:58.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SystemUsers.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\SystemUsers.cs",
-              "RelativeDocumentMoniker": "SystemUsers.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\SystemUsers.cs",
-              "RelativeToolTip": "SystemUsers.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAwwCAAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T14:06:42.855Z",
               "EditorCaption": ""
             }
           ]

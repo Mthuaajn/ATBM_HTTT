@@ -47,6 +47,22 @@ namespace BUS
                 }
             }
         }
+
+        public void RevokeRole(string userName, string role)
+        {
+            systemUsers.RevokeRole(userName, role); // Gọi phương thức từ DAO để thu hồi quyền
+        }
+
+        public DataTable GetRoleOfSelectedUser(string userNameSelected)
+        {
+            return systemUsers.GetRoleOfSelectedUser(userNameSelected); // Gọi phương thức từ DAO để lấy danh sách quyền của người dùng
+        }
+        public DataTable GetAllRoles() { return systemUsers.GetAllRoles(); }
+
+        public void GrantRole(string userName, string role)
+        { 
+            systemUsers.GrantRole(userName, role); // Gọi phương thức từ DAO để cấp quyền
+        }
     }
     
 }
