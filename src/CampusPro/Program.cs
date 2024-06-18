@@ -17,7 +17,7 @@ namespace CampusPro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SystemUsers());
+            Application.Run(new UsersAndRoles());
         }
     }
 }

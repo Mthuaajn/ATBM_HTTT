@@ -3,21 +3,8 @@
   "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\systemusersbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\systemusersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,70 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GrantRoleForUser.cs [Design]",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
-              "RelativeDocumentMoniker": "GrantRoleForUser.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs [Design]",
-              "RelativeToolTip": "GrantRoleForUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T19:09:48.588Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Modify.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Modify.cs",
-              "RelativeDocumentMoniker": "..\\DAO\\Modify.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Modify.cs",
-              "RelativeToolTip": "..\\DAO\\Modify.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwDAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T18:48:47.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GrantRoleForUser.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
-              "RelativeDocumentMoniker": "GrantRoleForUser.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
-              "RelativeToolTip": "GrantRoleForUser.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAkwBIAAAAFAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T17:16:18.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SystemUsersBUS.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs",
-              "RelativeDocumentMoniker": "..\\BUS\\SystemUsersBUS.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs*",
-              "RelativeToolTip": "..\\BUS\\SystemUsersBUS.cs*",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwD8AAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T16:39:14.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SystemUsersDAO.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs",
-              "RelativeDocumentMoniker": "..\\DAO\\SystemUsersDAO.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs*",
-              "RelativeToolTip": "..\\DAO\\SystemUsersDAO.cs*",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAgwEoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T16:09:50.393Z",
+              "WhenOpened": "2024-06-18T19:53:54.662Z",
               "EditorCaption": ""
             }
           ]

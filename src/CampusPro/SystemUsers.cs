@@ -60,13 +60,6 @@ namespace UsersManagement
             searchBtn.BackColor = Color.White;
         }
 
-        // Flow
-        //private void usersAndRolesBtn_Click(object sender, EventArgs e)
-        //{
-        //    UsersAndRoles obj = new UsersAndRoles();
-        //    this.Hide();
-        //    obj.Show();
-        //}
 
         // Refresh
         private void refreshBtn_Click(object sender, EventArgs e)
@@ -125,6 +118,14 @@ namespace UsersManagement
         {
 
         }
+
+        // Flow
+        //private void usersAndRolesBtn_Click(object sender, EventArgs e)
+        //{
+        //    UsersAndRoles obj = new UsersAndRoles();
+        //    this.Hide();
+        //    obj.Show();
+        //}
 
         //private void privilegesBtn_Click(object sender, EventArgs e)
         //{

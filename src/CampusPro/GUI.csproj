@@ -86,11 +86,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddRole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddRole.Designer.cs">
+      <DependentUpon>AddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRole.Designer.cs">
+      <DependentUpon>EditRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="GrantRoleForUser.cs">
       <SubType>Form</SubType>
@@ -112,6 +130,24 @@
     <Compile Include="SystemUsers.Designer.cs">
       <DependentUpon>SystemUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsersAndRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersAndRoles.Designer.cs">
+      <DependentUpon>UsersAndRoles.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddRole.resx">
+      <DependentUpon>AddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRole.resx">
+      <DependentUpon>EditRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GrantRoleForUser.resx">
       <DependentUpon>GrantRoleForUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SystemUsers.resx">
       <DependentUpon>SystemUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersAndRoles.resx">
+      <DependentUpon>UsersAndRoles.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>

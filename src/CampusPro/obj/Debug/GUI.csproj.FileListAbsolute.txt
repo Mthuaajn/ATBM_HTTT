@@ -44,3 +44,8 @@ D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\GUI.csproj.Up2Date
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\CampusPro.exe
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\CampusPro.pdb
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.AddRole.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.AddUser.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.EditRole.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.EditUser.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.UsersAndRoles.resources
