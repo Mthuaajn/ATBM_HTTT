@@ -3,17 +3,25 @@
   "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D3DAC80-22BB-492B-9BFA-38FA6C742486}|..\\DTO\\DTO.csproj|d:\\github\\atbm_httt\\src\\dto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\revokerolefromuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:revokerolefromuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\systemusersbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\systemusersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|CampusPro.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|CampusPro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\systemusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:systemusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantroleforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,47 +36,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DTO\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\DTO\\Form1.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DTO\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\DTO\\Form1.cs [Design]",
+              "Title": "RevokeRoleFromUser.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\RevokeRoleFromUser.cs",
+              "RelativeDocumentMoniker": "RevokeRoleFromUser.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\RevokeRoleFromUser.cs",
+              "RelativeToolTip": "RevokeRoleFromUser.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T17:00:43.136Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-18T17:16:35.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GrantRoleForUser.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
+              "RelativeDocumentMoniker": "GrantRoleForUser.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRoleForUser.cs",
+              "RelativeToolTip": "GrantRoleForUser.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAxwCAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T17:16:18.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\DAO\\Form1.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\DAO\\Form1.cs [Design]",
+              "Title": "SystemUsersBUS.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs",
+              "RelativeDocumentMoniker": "..\\BUS\\SystemUsersBUS.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\SystemUsersBUS.cs",
+              "RelativeToolTip": "..\\BUS\\SystemUsersBUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T17:00:30.695Z"
+              "WhenOpened": "2024-06-18T16:39:14.556Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\BUS\\Form1.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\BUS\\Form1.cs [Design]",
+              "Title": "SystemUsersDAO.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\SystemUsersDAO.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\SystemUsersDAO.cs",
+              "RelativeToolTip": "..\\DAO\\SystemUsersDAO.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:59:44.422Z"
+              "WhenOpened": "2024-06-18T16:09:50.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\Connection.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
+              "RelativeToolTip": "..\\DAO\\Connection.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T14:11:58.295Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "SystemUsers.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\SystemUsers.cs",
+              "RelativeDocumentMoniker": "SystemUsers.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\SystemUsers.cs",
+              "RelativeToolTip": "SystemUsers.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAwwCAAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:59:20.229Z"
+              "WhenOpened": "2024-06-18T14:06:42.855Z",
+              "EditorCaption": ""
             }
           ]
         }
