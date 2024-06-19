@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\privilegesbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\grantuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,14 +14,11 @@
       "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\privileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:privileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\privilegesdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\privilegesbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\privileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:privileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,42 +32,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GrantUser.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantUser.cs",
-              "RelativeDocumentMoniker": "GrantUser.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantUser.cs",
-              "RelativeToolTip": "GrantUser.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T16:12:45.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GrantUser.cs [Design]",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantUser.cs",
               "RelativeDocumentMoniker": "GrantUser.cs",
               "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantUser.cs [Design]",
               "RelativeToolTip": "GrantUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T16:12:42.355Z",
+              "WhenOpened": "2024-06-19T18:15:00.007Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "GrantUser.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantUser.cs",
+              "RelativeDocumentMoniker": "GrantUser.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantUser.cs",
+              "RelativeToolTip": "GrantUser.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAuwCkAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T16:12:45.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PrivilegesBUS.cs",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\PrivilegesBUS.cs",
               "RelativeDocumentMoniker": "..\\BUS\\PrivilegesBUS.cs",
               "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\PrivilegesBUS.cs",
               "RelativeToolTip": "..\\BUS\\PrivilegesBUS.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBsAAABuAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAACkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T07:03:58.762Z",
               "EditorCaption": ""
@@ -80,14 +80,14 @@
               "RelativeDocumentMoniker": "..\\DAO\\PrivilegesDAO.cs",
               "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\PrivilegesDAO.cs",
               "RelativeToolTip": "..\\DAO\\PrivilegesDAO.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAuwHQAAAAqAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAmwJoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T07:03:21.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Privileges.cs",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Privileges.cs",
               "RelativeDocumentMoniker": "Privileges.cs",

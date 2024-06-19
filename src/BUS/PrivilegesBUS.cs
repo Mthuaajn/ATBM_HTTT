@@ -26,5 +26,13 @@ namespace BUS
         public DataTable FilterRolesInTabLevel(string role) => privileges.FilterRolesInTabLevel((string)role);
 
         public DataTable FilterRolesInColLevel(string role) => privileges.FilterRolesInColLevel((string)role);
+
+        public DataTable LoadTables() => privileges.LoadTables();
+
+        public DataTable LoadColumnsOfTable(string table) => privileges.LoadColumnsOfTable(table);
+
+        public void GrantUser(string privilege, string table, string user) => privileges.GrantUser(privilege, table, user);
+
+        public void GrantUserWithGrantOption(string privilege, string tablem, string user) => privileges.GrantUserWithGrantOption((string)privilege, tablem, user); 
     }
 }

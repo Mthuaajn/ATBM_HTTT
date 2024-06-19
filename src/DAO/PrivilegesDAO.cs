@@ -122,5 +122,37 @@ namespace DAO
             dataTable = modify.LoadTable(query);
             return dataTable;
         }
+
+        public DataTable LoadTables()
+        {
+            DataTable dataTable = new DataTable();
+            string query = "SELECT object_name " +
+                           "FROM user_objects " +
+                           "WHERE object_type = 'TABLE' AND created >= TO_DATE('2024-04-01', 'YYYY-MM-DD')";
+            // Cai ngay nay de t loc may tables he thong thoi chu khong co gi :Đ
+            dataTable = modify.LoadTable(query);
+            return dataTable ;
+        }
+
+        public DataTable LoadColumnsOfTable(string table)
+        {
+            DataTable dataTable = new DataTable();
+            string query = "SELECT COLUMN_NAME " +
+                           "FROM ALL_TAB_COLUMNS " +
+                           $"WHERE TABLE_NAME = '{table}'";
+            dataTable = modify.LoadTable(query);
+            return dataTable;
+        }
+
+        public void GrantUser(string privilege, string table, string user)
+        {
+            string query = $"GRANT {privilege} ON {table} TO {user}";
+            modify.ExecuteQuery(query);
+        }
+        public void GrantUserWithGrantOption(string privilege, string table, string user)
+        {
+            string query = $"GRANT {privilege} ON {table} TO {user} WITH GRANT OPTION";
+            modify.ExecuteQuery(query);
+        }
     }
 }
