@@ -114,10 +114,6 @@ namespace UsersManagement
             }
         }
 
-        private void toolBarPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         // Flow
         //private void usersAndRolesBtn_Click(object sender, EventArgs e)

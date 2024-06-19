@@ -49,3 +49,6 @@ D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.AddUser.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.EditRole.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.EditUser.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.UsersAndRoles.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GrantRole.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GrantUser.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.Privileges.resources

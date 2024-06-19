@@ -31,8 +31,6 @@ namespace UsersManagement
         // Display data
         public void UsersAndRoles_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet1._USER_' table. You can move, or remove it, as needed.
-            //this.uSER_TableAdapter.Fill(this.dataSet1._USER_);
            
             try
             {
@@ -43,8 +41,6 @@ namespace UsersManagement
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-
-
         }
 
         // Search user name
@@ -245,9 +241,5 @@ namespace UsersManagement
         //    this.Hide();
         //}
 
-        private void toolBarPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

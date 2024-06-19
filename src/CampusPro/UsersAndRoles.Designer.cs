@@ -104,7 +104,6 @@
             this.toolBarPanel.Name = "toolBarPanel";
             this.toolBarPanel.Size = new System.Drawing.Size(1280, 100);
             this.toolBarPanel.TabIndex = 2;
-            this.toolBarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.toolBarPanel_Paint);
             // 
             // refreshBtn
             // 
