@@ -1,1 +1,0 @@
-# Oracle-DB-Server-Manager
