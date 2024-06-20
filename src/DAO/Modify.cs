@@ -47,5 +47,20 @@ namespace DAO
                 oracleConnection.Close();
             }
         }
+
+        public object ExecuteScalar(string query)
+        {
+            object result = null;
+            using (OracleConnection oracleConnection = Connection.GetOracleConnection())
+            {
+                oracleConnection.Open();
+                using (OracleCommand command = new OracleCommand(query, oracleConnection))
+                {
+                    result = command.ExecuteScalar();
+                }
+                oracleConnection.Close();
+            }
+            return result;
+        }
     }
 }

@@ -58,6 +58,8 @@ namespace UsersManagement
                 else
                 {
                     MessageBox.Show("Only allow grant to column for SELECT OR UPDATE !");
+                    selectColLabel.Hide();
+                    selectColumnCB.Hide();
                 }
             }
             else
@@ -73,7 +75,7 @@ namespace UsersManagement
             GetColumn();
         }
 
-          private void grantBtn_Click(object sender, EventArgs e)
+        private void grantBtn_Click(object sender, EventArgs e)
         {
             string username = UsernameSelected;
             string privilege = selectPrivilegeComboBox.Text.ToString();

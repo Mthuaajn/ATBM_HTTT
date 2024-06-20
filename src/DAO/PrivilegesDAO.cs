@@ -166,25 +166,47 @@ namespace DAO
             modify.ExecuteQuery(query);
         }
 
+        public bool IsViewExist(string viewName)
+        {
+            string query = "SELECT COUNT(*) FROM DBA_OBJECTS " +
+                "WHERE OBJECT_TYPE = 'VIEW' " +
+                $"AND OBJECT_NAME = '{viewName}'";
+            int viewCount = Convert.ToInt32(modify.ExecuteScalar(query));
+            if (viewCount == 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
         public void GrantUserSelectToColLevel(string column, string table, string user)
         {
-            // Tao cai view select cot
-            string query = $"CREATE VIEW {table}_{column}_VIEW AS " +
-                            $"SELECT {column} " +
-                            $"FROM {table}";
-            modify.ExecuteQuery(query);
+            string query = "";
+            if (!IsViewExist($"{table}_{column}_VIEW"))
+            {
+                // Tao cai view select cot
+                query = $"CREATE VIEW {table}_{column}_VIEW AS " +
+                        $"SELECT {column} " +
+                        $"FROM {table}";
+                modify.ExecuteQuery(query);
+            }
 
-            // grant select tren view do cho user
+            // grant select tren view do cho user with grant option
             query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user}";
             modify.ExecuteQuery(query);
         }
+       
         public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user)
         {
-            // Tao cai view select cot
-            string query = $"CREATE VIEW {table}_{column}_VIEW AS " +
-                            $"SELECT {column} " +
-                            $"FROM {table}";
-            modify.ExecuteQuery(query);
+            string query = "";
+            if (!IsViewExist($"{table}_{column}_VIEW"))
+            {
+                // Tao cai view select cot
+                query = $"CREATE VIEW {table}_{column}_VIEW AS " +
+                        $"SELECT {column} " +
+                        $"FROM {table}";
+                modify.ExecuteQuery(query);
+            }
 
             // grant select tren view do cho user with grant option
             query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user} WITH GRANT OPTION";

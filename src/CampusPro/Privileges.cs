@@ -252,11 +252,11 @@ namespace UsersManagement
                     // output test
                     //MessageBox.Show($"Revoke {privilege} ON {table} FROM {username}");
                     privileges.RevokeUser(privilege, table, username);
-                    MessageBox.Show("Role revoked successfully.");
+                    MessageBox.Show("User revoked successfully.");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error revoking role: " + ex.Message);
+                    MessageBox.Show("Error revoking user: " + ex.Message);
                 }
             }
         }
@@ -284,33 +284,25 @@ namespace UsersManagement
             string role = rolesPrivsDGV.SelectedRows[0].Cells[0].Value.ToString();
             string privilege = rolesPrivsDGV.SelectedRows[0].Cells[3].Value.ToString();
             string table = rolesPrivsDGV.SelectedRows[0].Cells[1].Value.ToString();
-            //string column = "";
 
-            if (MessageBox.Show("Are you sure you want to revoke this privilege from the this user?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure you want to revoke this privilege from the this role?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-
+                if (toColCheckBox2.Checked == true)
+                {
+                    // Này không biết tại sao nằm ở index 4 nữa :v
+                    privilege = rolesPrivsDGV.SelectedRows[0].Cells[4].Value.ToString();
+                }
                 try
                 {
-                    using (OracleConnection oracleConnection = Connection.GetOracleConnection())
-                    {
-                        oracleConnection.Open();
-                        string query = $"REVOKE {privilege} ON {table} FROM {role}";
-
-                        using (OracleCommand command = new OracleCommand(query, oracleConnection))
-                        {
-                            command.ExecuteNonQuery();
-                            MessageBox.Show("Role revoked successfully.");
-                        }
-                        oracleConnection.Close();
-                    }
-
-
+                    // output test
+                    //MessageBox.Show($"Revoke {privilege} ON {table} FROM {role}");
+                    privileges.RevokeUser(privilege, table, role);
+                    MessageBox.Show("Role revoked successfully.");
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error revoking role: " + ex.Message);
                 }
-
             }
         }
 
