@@ -33,6 +33,12 @@ namespace BUS
 
         public void GrantUser(string privilege, string table, string user) => privileges.GrantUser(privilege, table, user);
 
-        public void GrantUserWithGrantOption(string privilege, string tablem, string user) => privileges.GrantUserWithGrantOption((string)privilege, tablem, user); 
+        public void GrantUserWithGrantOption(string privilege, string tablem, string user) => privileges.GrantUserWithGrantOption((string)privilege, tablem, user);
+
+        public void GrantUserToColLevel(string privilege, string column, string table, string user) => privileges.GrantUserToColLevel(privilege, column, table, user);
+        public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table, string user) => privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, user);
+
+        public void GrantUserSelectToColLevel(string column, string table, string user) => privileges.GrantUserSelectToColLevel((string)column, table, user);   
+        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user) => privileges.GrantUserSelectToColLevelWithGrantOption((string)column, table, user);            
     }
 }

@@ -1,5 +1,4 @@
-﻿using Oracle.ManagedDataAccess.Client;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAO;
 using PrivilegesBUS = BUS.PrivilegesBUS;
 using System.Collections;
 
@@ -18,7 +16,6 @@ namespace UsersManagement
     {
         PrivilegesBUS privileges = new PrivilegesBUS();
         public string UsernameSelected { get; set; }
-        private string Privilege = "";
         private string table;
         public GrantUser()
         {
@@ -76,12 +73,10 @@ namespace UsersManagement
             GetColumn();
         }
 
-  
-
-        private void grantBtn_Click(object sender, EventArgs e)
+          private void grantBtn_Click(object sender, EventArgs e)
         {
             string username = UsernameSelected;
-            string privilege = Privilege;
+            string privilege = selectPrivilegeComboBox.Text.ToString();
             string table = selectTableComboBox.SelectedValue.ToString();
             bool withGrantOption = false;
             if (withGrantOptionCheckBox.Checked == true)
@@ -96,6 +91,8 @@ namespace UsersManagement
 
                     try
                     {
+                        // output test
+                        //MessageBox.Show($"{privilege}, {table}, {username}");
                         if (withGrantOption == true)
                         {
                             privileges.GrantUserWithGrantOption(privilege, table, username);
@@ -118,7 +115,45 @@ namespace UsersManagement
             // Phan quyen den muc cot
             else
             {
-
+                string column = selectColumnCB.SelectedValue.ToString();
+                if (MessageBox.Show("Are you sure you want to grant this privilege to the above user?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        // output test
+                        //MessageBox.Show($"{privilege},{column}, {table}, {username}");
+                        // Oracle k cho phan quyen truc tiep select ma phai thong qua view
+                        if (privilege == "SELECT")
+                        {
+                            if (withGrantOption == true)
+                            {
+                                privileges.GrantUserSelectToColLevelWithGrantOption(column, table, username);
+                            }
+                            else
+                            {
+                                privileges.GrantUserSelectToColLevel(column, table, username);
+                            }
+                        }
+                        else
+                        {
+                            if (withGrantOption == true)
+                            {
+                                privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, username);
+                            }
+                            else
+                            {
+                                privileges.GrantUserToColLevel(privilege, column, table, username);
+                            }
+                        }
+                        MessageBox.Show("Privilege granted successfully.");
+                        // Exit adding window
+                        this.Hide();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error granting to user: " + ex.Message);
+                    }
+                }
             }
         }
     }

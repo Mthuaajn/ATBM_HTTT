@@ -154,5 +154,41 @@ namespace DAO
             string query = $"GRANT {privilege} ON {table} TO {user} WITH GRANT OPTION";
             modify.ExecuteQuery(query);
         }
+        public void GrantUserToColLevel(string privilege, string column, string table, string user)
+        {
+            string query = $"GRANT {privilege}({column}) ON {table} TO {user}";
+            modify.ExecuteQuery(query);
+        }
+
+        public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table, string user)
+        {
+            string query = $"GRANT {privilege}({column}) ON {table} TO {user} WITH GRANT OPTION";
+            modify.ExecuteQuery(query);
+        }
+
+        public void GrantUserSelectToColLevel(string column, string table, string user)
+        {
+            // Tao cai view select cot
+            string query = $"CREATE VIEW {table}_{column}_VIEW AS " +
+                            $"SELECT {column} " +
+                            $"FROM {table}";
+            modify.ExecuteQuery(query);
+
+            // grant select tren view do cho user
+            query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user}";
+            modify.ExecuteQuery(query);
+        }
+        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user)
+        {
+            // Tao cai view select cot
+            string query = $"CREATE VIEW {table}_{column}_VIEW AS " +
+                            $"SELECT {column} " +
+                            $"FROM {table}";
+            modify.ExecuteQuery(query);
+
+            // grant select tren view do cho user with grant option
+            query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user} WITH GRANT OPTION";
+            modify.ExecuteQuery(query);
+        }
     }
 }

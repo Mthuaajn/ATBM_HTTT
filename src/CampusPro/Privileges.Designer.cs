@@ -105,7 +105,7 @@
             // 
             this.toColCheckBox1.AutoSize = true;
             this.toColCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toColCheckBox1.Location = new System.Drawing.Point(472, 44);
+            this.toColCheckBox1.Location = new System.Drawing.Point(435, 44);
             this.toColCheckBox1.Name = "toColCheckBox1";
             this.toColCheckBox1.Size = new System.Drawing.Size(136, 29);
             this.toColCheckBox1.TabIndex = 10;
@@ -119,11 +119,11 @@
             this.toTabCheckBox1.Checked = true;
             this.toTabCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toTabCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toTabCheckBox1.Location = new System.Drawing.Point(472, 9);
+            this.toTabCheckBox1.Location = new System.Drawing.Point(435, 9);
             this.toTabCheckBox1.Name = "toTabCheckBox1";
-            this.toTabCheckBox1.Size = new System.Drawing.Size(115, 29);
+            this.toTabCheckBox1.Size = new System.Drawing.Size(170, 29);
             this.toTabCheckBox1.TabIndex = 9;
-            this.toTabCheckBox1.Text = "To tables";
+            this.toTabCheckBox1.Text = "To tables/views";
             this.toTabCheckBox1.UseVisualStyleBackColor = true;
             this.toTabCheckBox1.CheckStateChanged += new System.EventHandler(this.toTabCheckBox1_CheckStateChanged);
             // 
@@ -214,7 +214,6 @@
             this.logoutBtn.TabIndex = 4;
             this.logoutBtn.Text = "Log out";
             this.logoutBtn.UseVisualStyleBackColor = false;
-            //this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // usersAndRolesBtn
             // 
@@ -320,7 +319,7 @@
             // 
             this.toColCheckBox2.AutoSize = true;
             this.toColCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toColCheckBox2.Location = new System.Drawing.Point(472, 44);
+            this.toColCheckBox2.Location = new System.Drawing.Point(432, 44);
             this.toColCheckBox2.Name = "toColCheckBox2";
             this.toColCheckBox2.Size = new System.Drawing.Size(136, 29);
             this.toColCheckBox2.TabIndex = 11;
@@ -334,11 +333,11 @@
             this.totableCheckBox2.Checked = true;
             this.totableCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.totableCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totableCheckBox2.Location = new System.Drawing.Point(472, 7);
+            this.totableCheckBox2.Location = new System.Drawing.Point(432, 7);
             this.totableCheckBox2.Name = "totableCheckBox2";
-            this.totableCheckBox2.Size = new System.Drawing.Size(115, 29);
+            this.totableCheckBox2.Size = new System.Drawing.Size(170, 29);
             this.totableCheckBox2.TabIndex = 11;
-            this.totableCheckBox2.Text = "To tables";
+            this.totableCheckBox2.Text = "To tables/views";
             this.totableCheckBox2.UseVisualStyleBackColor = true;
             this.totableCheckBox2.CheckStateChanged += new System.EventHandler(this.totableCheckBox2_CheckStateChanged);
             // 
