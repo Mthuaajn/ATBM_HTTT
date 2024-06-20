@@ -1,15 +1,5 @@
-﻿using Oracle.ManagedDataAccess.Client;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Channels;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
-using DAO;
 using PrivilegesBUS = BUS.PrivilegesBUS;
 
 namespace UsersManagement
@@ -20,7 +10,6 @@ namespace UsersManagement
         PrivilegesBUS privileges = new PrivilegesBUS();
         private string UserName;
         private string RoleName;
-        Modify modify = new Modify();
         public Privileges()
         {
             InitializeComponent();
@@ -336,13 +325,13 @@ namespace UsersManagement
             Privileges_Load(sender, e);
         }
 
-        //private void logoutBtn_Click(object sender, EventArgs e)
-        //{
-        //    Login obj = new Login();
-        //    obj.Show();
-        //    this.Hide();
-        //}
 
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
 
     }
 }

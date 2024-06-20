@@ -127,7 +127,7 @@
             this.logoutBtn.TabIndex = 4;
             this.logoutBtn.Text = "Log out";
             this.logoutBtn.UseVisualStyleBackColor = false;
-            //this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // usersAndRolesBtn
             // 
@@ -150,7 +150,7 @@
             this.privilegesBtn.TabIndex = 2;
             this.privilegesBtn.Text = "Privileges ";
             this.privilegesBtn.UseVisualStyleBackColor = false;
-            //this.privilegesBtn.Click += new System.EventHandler(this.privilegesBtn_Click);
+            this.privilegesBtn.Click += new System.EventHandler(this.privilegesBtn_Click);
             // 
             // systemUsersBtn
             // 

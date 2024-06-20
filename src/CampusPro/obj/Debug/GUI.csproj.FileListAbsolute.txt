@@ -52,3 +52,4 @@ D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.UsersAndRoles.resour
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GrantRole.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GrantUser.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.Privileges.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.Login.resources

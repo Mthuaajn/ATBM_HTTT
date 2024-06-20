@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using UsersAndRolesBUS = BUS.UsersAndRolesBUS;
 
 
@@ -31,7 +23,6 @@ namespace UsersManagement
         // Display data
         public void UsersAndRoles_Load(object sender, EventArgs e)
         {
-           
             try
             {
                 usersDGV.DataSource = usersAndRoles.LoadAllUsers();
@@ -227,19 +218,18 @@ namespace UsersManagement
             obj.Show();
         }
 
-        //private void privilegesBtn_Click(object sender, EventArgs e)
-        //{
-        //    Privileges obj = new Privileges();
-        //    obj.Show();
-        //    this.Hide();
-        //}
+        private void privilegesBtn_Click(object sender, EventArgs e)
+        {
+            Privileges obj = new Privileges();
+            obj.Show();
+            this.Hide();
+        }
 
-        //private void logoutBtn_Click(object sender, EventArgs e)
-        //{
-        //    Login obj = new Login();
-        //    obj.Show();
-        //    this.Hide();
-        //}
-
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

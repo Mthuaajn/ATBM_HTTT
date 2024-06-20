@@ -1,13 +1,4 @@
-﻿using Oracle.ManagedDataAccess.Client;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UsersManagement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+﻿using System.Data;
 
 namespace DAO
 {

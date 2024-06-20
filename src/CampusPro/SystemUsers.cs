@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemUsersBUS = BUS.SystemUsersBUS;
 
@@ -116,25 +110,27 @@ namespace UsersManagement
 
 
         // Flow
-        //private void usersAndRolesBtn_Click(object sender, EventArgs e)
-        //{
-        //    UsersAndRoles obj = new UsersAndRoles();
-        //    this.Hide();
-        //    obj.Show();
-        //}
+        private void usersAndRolesBtn_Click(object sender, EventArgs e)
+        {
+            UsersAndRoles obj = new UsersAndRoles();
+            this.Hide();
+            obj.Show();
+        }
 
-        //private void privilegesBtn_Click(object sender, EventArgs e)
-        //{
-        //    Privileges obj = new Privileges();
-        //    obj.Show();
-        //    this.Hide();
-        //}
+        private void privilegesBtn_Click(object sender, EventArgs e)
+        {
+            Privileges obj = new Privileges();
+            obj.Show();
+            this.Hide();
+        }
 
-        //private void logoutBtn_Click(object sender, EventArgs e)
-        //{
-        //    Login obj = new Login();
-        //    obj.Show();
-        //    this.Hide();
-        //}
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
     }
 }

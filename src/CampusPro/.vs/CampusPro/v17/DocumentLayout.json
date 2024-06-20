@@ -3,79 +3,37 @@
   "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\privileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:privileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\privilegesbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\privilegesdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\grantrole.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:grantrole.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PrivilegesBUS.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\PrivilegesBUS.cs",
-              "RelativeDocumentMoniker": "..\\BUS\\PrivilegesBUS.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\PrivilegesBUS.cs",
-              "RelativeToolTip": "..\\BUS\\PrivilegesBUS.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwCwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:03:58.762Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PrivilegesDAO.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\PrivilegesDAO.cs",
-              "RelativeDocumentMoniker": "..\\DAO\\PrivilegesDAO.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\PrivilegesDAO.cs",
-              "RelativeToolTip": "..\\DAO\\PrivilegesDAO.cs",
-              "ViewState": "AQIAANEAAAAAAAAAAAAUwM0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:03:21.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GrantRole.Designer.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRole.Designer.cs",
-              "RelativeDocumentMoniker": "GrantRole.Designer.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\GrantRole.Designer.cs",
-              "RelativeToolTip": "GrantRole.Designer.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAEwFgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T13:19:49.049Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Privileges.cs",
-              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Privileges.cs",
-              "RelativeDocumentMoniker": "Privileges.cs",
-              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Privileges.cs*",
-              "RelativeToolTip": "Privileges.cs*",
-              "ViewState": "AQIAABUBAAAAAAAAAAAuwCQBAABFAAAA",
+              "Title": "Connection.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\Connection.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
+              "RelativeToolTip": "..\\DAO\\Connection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:40:08.926Z",
+              "WhenOpened": "2024-06-20T14:42:00.51Z",
               "EditorCaption": ""
             }
           ]
