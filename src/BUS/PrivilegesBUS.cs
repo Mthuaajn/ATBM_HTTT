@@ -39,6 +39,8 @@ namespace BUS
         public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table, string user) => privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, user);
 
         public void GrantUserSelectToColLevel(string column, string table, string user) => privileges.GrantUserSelectToColLevel((string)column, table, user);   
-        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user) => privileges.GrantUserSelectToColLevelWithGrantOption((string)column, table, user);            
+        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user) => privileges.GrantUserSelectToColLevelWithGrantOption((string)column, table, user);       
+        
+        public void RevokeUser(string privilege, string table, string user) => privileges.RevokeUser(privilege, table, user);
     }
 }

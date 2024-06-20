@@ -190,5 +190,11 @@ namespace DAO
             query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user} WITH GRANT OPTION";
             modify.ExecuteQuery(query);
         }
+
+        public void RevokeUser(string privilege, string table, string user)
+        {
+            string query = $"REVOKE {privilege} ON {table} FROM {user}";
+            modify.ExecuteQuery(query);
+        }
     }
 }
