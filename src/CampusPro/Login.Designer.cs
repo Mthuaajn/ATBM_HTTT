@@ -70,6 +70,7 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(198, 34);
             this.usernameTextBox.TabIndex = 8;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // passwordTextBox
             // 
@@ -83,13 +84,13 @@
             // 
             this.roleComboBox.FormattingEnabled = true;
             this.roleComboBox.Items.AddRange(new object[] {
-            "default",
-            "SYSDBA",
-            "SYSOPER",
-            "SYSBACKUP",
-            "SYSDG",
-            "SYSKM",
-            "SYSASM"});
+            "Sinh viên",
+            "Giảng viên",
+            "Nhân viên cơ bản",
+            "Giáo vụ",
+            "Trưởng đơn vị",
+            "Trưởng khoa",
+            "SYSDBA"});
             this.roleComboBox.Location = new System.Drawing.Point(122, 308);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(121, 24);

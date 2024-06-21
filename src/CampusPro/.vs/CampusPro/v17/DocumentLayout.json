@@ -3,7 +3,28 @@
   "WorkspaceRootPath": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C798DCF1-3F87-4B58-A14D-E05911387333}|..\\BUS\\BUS.csproj|d:\\github\\atbm_httt\\src\\bus\\loginbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|D:\\Github\\ATBM_HTTT\\src\\CampusPro\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B5FED-CC98-4313-BE12-26217B496B9A}|..\\DAO\\DAO.csproj|d:\\github\\atbm_httt\\src\\dao\\usersandrolesdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|d:\\github\\atbm_httt\\src\\campuspro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FCA1B-7929-48AB-B6F8-58DBA8B88BDA}|GUI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,15 +46,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T07:28:29.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginDAO.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\LoginDAO.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\LoginDAO.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\LoginDAO.cs",
+              "RelativeToolTip": "..\\DAO\\LoginDAO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAMwBAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T07:09:15.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginBUS.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\BUS\\LoginBUS.cs",
+              "RelativeDocumentMoniker": "..\\BUS\\LoginBUS.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\BUS\\LoginBUS.cs",
+              "RelativeToolTip": "..\\BUS\\LoginBUS.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwCEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:58:47.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Connection.cs",
               "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
               "RelativeDocumentMoniker": "..\\DAO\\Connection.cs",
               "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\Connection.cs",
               "RelativeToolTip": "..\\DAO\\Connection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAADUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T14:42:00.51Z",
+              "WhenOpened": "2024-06-20T17:18:47.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Login.cs*",
+              "RelativeToolTip": "Login.cs*",
+              "ViewState": "AQIAABAAAAAAAAAAAAAWwBoAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:38:14.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\CampusPro\\Login.cs [Design]*",
+              "RelativeToolTip": "Login.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:38:12.385Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersAndRolesDAO.cs",
+              "DocumentMoniker": "D:\\Github\\ATBM_HTTT\\src\\DAO\\UsersAndRolesDAO.cs",
+              "RelativeDocumentMoniker": "..\\DAO\\UsersAndRolesDAO.cs",
+              "ToolTip": "D:\\Github\\ATBM_HTTT\\src\\DAO\\UsersAndRolesDAO.cs",
+              "RelativeToolTip": "..\\DAO\\UsersAndRolesDAO.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwCMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T07:55:33.115Z",
               "EditorCaption": ""
             }
           ]

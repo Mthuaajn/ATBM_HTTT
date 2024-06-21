@@ -35,6 +35,9 @@ namespace DAO
                 query = $"CREATE USER {userName} IDENTIFIED BY {passWord}";
             }
             modify.ExecuteQuery(query);
+            // Cho create session để lát đăng nhập vào
+            query = $"GRANT CREATE SESSION TO {userName}";
+            modify.ExecuteQuery(query);
         }
 
         public void DropUser(string userName)

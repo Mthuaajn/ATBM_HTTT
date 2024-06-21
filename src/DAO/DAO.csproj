@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="LoginDAO.cs" />
     <Compile Include="Modify.cs" />
     <Compile Include="PrivilegesDAO.cs" />
     <Compile Include="Program.cs" />
