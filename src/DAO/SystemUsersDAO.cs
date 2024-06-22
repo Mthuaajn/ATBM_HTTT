@@ -16,7 +16,7 @@ namespace DAO
                                                             "COALESCE(DRP.INHERITED, 'N/A') AS INHERITED " +
                                                     "FROM  DBA_USERS U " +
                                                     "LEFT JOIN DBA_ROLE_PRIVS DRP ON  U.USERNAME = DRP.GRANTEE";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableSys(query);
             return dataTable;
         }
 
@@ -31,7 +31,7 @@ namespace DAO
                                                     "FROM  DBA_USERS U " +
                                                     "LEFT JOIN DBA_ROLE_PRIVS DRP ON  U.USERNAME = DRP.GRANTEE " +
                                                     "WHERE UPPER(U.USERNAME) LIKE '%" + userName + "%' ";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableSys(query);
             return dataTable;
         }
 
@@ -47,7 +47,7 @@ namespace DAO
             string query = "SELECT DRP.GRANTED_ROLE " +
                             "FROM DBA_USERS U LEFT JOIN DBA_ROLE_PRIVS DRP ON U.USERNAME = DRP.GRANTEE " +
                             "WHERE U.USERNAME = '" + userNameSelected + "' AND DRP.GRANTED_ROLE IS NOT NULL";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableSys(query);
             return dataTable;
         }
 
@@ -55,7 +55,7 @@ namespace DAO
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT ROLE FROM DBA_ROLES";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableSys(query);
             return dataTable;
         }
 

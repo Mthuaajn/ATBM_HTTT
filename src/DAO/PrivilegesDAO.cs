@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DAO
 {
@@ -7,7 +8,7 @@ namespace DAO
     {
         Modify modify = new Modify();
 
-        public DataTable LoadAllUsersInTabLevel()
+        public DataTable LoadAllUsersInTabLevel(string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT U.USERNAME, " +
@@ -16,11 +17,11 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_USERS U LEFT JOIN DBA_TAB_PRIVS P ON U.USERNAME = P.GRANTEE";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable LoadAllUsersInColLevel()
+        public DataTable LoadAllUsersInColLevel(string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT U.USERNAME, " +
@@ -30,11 +31,11 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_USERS U LEFT JOIN DBA_COL_PRIVS P ON U.USERNAME = P.GRANTEE";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable LoadAllRolesInTabLevel()
+        public DataTable LoadAllRolesInTabLevel(string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT R.ROLE, " +
@@ -43,11 +44,11 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_ROLES R LEFT JOIN DBA_TAB_PRIVS P ON R.ROLE = P.GRANTEE";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable LoadAllRolesInColLevel()
+        public DataTable LoadAllRolesInColLevel(string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT R.ROLE, " +
@@ -57,11 +58,11 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_ROLES R LEFT JOIN DBA_COL_PRIVS P ON R.ROLE = P.GRANTEE";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable FilterUsersInTabLevel(string userName)
+        public DataTable FilterUsersInTabLevel(string usernameSearch, string username, string password, string role)
         { 
             DataTable dataTable = new DataTable();
             string query = "SELECT U.USERNAME, " +
@@ -70,12 +71,12 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_USERS U LEFT JOIN DBA_TAB_PRIVS P ON U.USERNAME = P.GRANTEE " +
-                                                        "WHERE U.USERNAME = '" + userName + "'";
-            dataTable = modify.LoadTable(query);
+                                                        "WHERE U.USERNAME = '" + usernameSearch + "'";
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable FilterUsersInColLevel(string userName)
+        public DataTable FilterUsersInColLevel(string usernameSearch, string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT U.USERNAME, " +
@@ -85,12 +86,12 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_USERS U LEFT JOIN DBA_COL_PRIVS P ON U.USERNAME = P.GRANTEE " +
-                                                        "WHERE U.USERNAME = '" + userName + "'";
-            dataTable = modify.LoadTable(query);
+                                                        "WHERE U.USERNAME = '" + usernameSearch + "'";
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable FilterRolesInTabLevel(string role)
+        public DataTable FilterRolesInTabLevel(string roleSearch, string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT R.ROLE, " +
@@ -99,12 +100,12 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_ROLES R LEFT JOIN DBA_TAB_PRIVS P ON R.ROLE = P.GRANTEE " +
-                                                        "WHERE R.ROLE = '" + role + "'";
-            dataTable = modify.LoadTable(query);
+                                                        "WHERE R.ROLE = '" + roleSearch + "'";
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable FilterRolesInColLevel(string role)
+        public DataTable FilterRolesInColLevel(string roleSearch, string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT R.ROLE, " +
@@ -114,60 +115,60 @@ namespace DAO
                                                         "COALESCE(P.PRIVILEGE, 'N/A') AS PRIVILEGE, " +
                                                         "COALESCE(P.GRANTABLE, 'N/A') AS GRANTABLE " +
                                                         "FROM DBA_ROLES R LEFT JOIN DBA_COL_PRIVS P ON R.ROLE = P.GRANTEE " +
-                                                        "WHERE R.ROLE = '" + role + "'";
-            dataTable = modify.LoadTable(query);
+                                                        "WHERE R.ROLE = '" + roleSearch + "'";
+            dataTable = modify.LoadTableByUser(query, username, password, role);
             return dataTable;
         }
 
-        public DataTable LoadTables()
+        public DataTable LoadTables( string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT object_name " +
                            "FROM user_objects " +
                            "WHERE object_type = 'TABLE' AND created >= TO_DATE('2024-04-01', 'YYYY-MM-DD')";
             // Cai ngay nay de t loc may tables he thong thoi chu khong co gi :Đ
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTable(query, username, password, role);
             return dataTable ;
         }
 
-        public DataTable LoadColumnsOfTable(string table)
+        public DataTable LoadColumnsOfTable(string table, string username, string password, string role)
         {
             DataTable dataTable = new DataTable();
             string query = "SELECT COLUMN_NAME " +
                            "FROM ALL_TAB_COLUMNS " +
                            $"WHERE TABLE_NAME = '{table}'";
-            dataTable = modify.LoadTable(query);
+            dataTable = modify.LoadTable(query, username, password, role);
             return dataTable;
         }
 
-        public void GrantUser(string privilege, string table, string user)
+        public void GrantUser(string privilege, string table, string user, string username, string password, string role)
         {
             string query = $"GRANT {privilege} ON {table} TO {user}";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
-        public void GrantUserWithGrantOption(string privilege, string table, string user)
+        public void GrantUserWithGrantOption(string privilege, string table, string user, string username, string password, string role)
         {
             string query = $"GRANT {privilege} ON {table} TO {user} WITH GRANT OPTION";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
-        public void GrantUserToColLevel(string privilege, string column, string table, string user)
+        public void GrantUserToColLevel(string privilege, string column, string table, string user, string username,string password, string role)
         {
             string query = $"GRANT {privilege}({column}) ON {table} TO {user}";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
 
-        public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table, string user)
+        public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table,string user, string username, string password, string role)
         {
             string query = $"GRANT {privilege}({column}) ON {table} TO {user} WITH GRANT OPTION";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
 
-        public bool IsViewExist(string viewName)
+        public bool IsViewExist(string viewName, string username, string password, string role)
         {
             string query = "SELECT COUNT(*) FROM DBA_OBJECTS " +
                 "WHERE OBJECT_TYPE = 'VIEW' " +
                 $"AND OBJECT_NAME = '{viewName}'";
-            int viewCount = Convert.ToInt32(modify.ExecuteScalar(query));
+            int viewCount = Convert.ToInt32(modify.ExecuteScalarByUser(query, username, password, role));
             if (viewCount == 0)
             {
                 return false;
@@ -175,44 +176,44 @@ namespace DAO
             return true;
         }
 
-        public void GrantUserSelectToColLevel(string column, string table, string user)
+        public void GrantUserSelectToColLevel(string column, string table, string user, string username, string password, string role)
         {
             string query = "";
-            if (!IsViewExist($"{table}_{column}_VIEW"))
+            if (!IsViewExist($"{table}_{column}_VIEW", username, password, role))
             {
                 // Tao cai view select cot
                 query = $"CREATE VIEW {table}_{column}_VIEW AS " +
                         $"SELECT {column} " +
                         $"FROM {table}";
-                modify.ExecuteQuery(query);
+                modify.ExecuteQueryByUser(query, username, password, role);
             }
 
             // grant select tren view do cho user with grant option
             query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user}";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
        
-        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user)
+        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user, string username, string password, string role)
         {
             string query = "";
-            if (!IsViewExist($"{table}_{column}_VIEW"))
+            if (!IsViewExist($"{table}_{column}_VIEW", username, password, role))
             {
                 // Tao cai view select cot
                 query = $"CREATE VIEW {table}_{column}_VIEW AS " +
                         $"SELECT {column} " +
                         $"FROM {table}";
-                modify.ExecuteQuery(query);
+                modify.ExecuteQueryByUser(query, username, password, role);
             }
 
             // grant select tren view do cho user with grant option
             query = $"GRANT SELECT ON {table}_{column}_VIEW TO {user} WITH GRANT OPTION";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
 
-        public void RevokeUser(string privilege, string table, string user)
+        public void RevokeUser(string privilege, string table, string user, string username, string password, string role)
         {
             string query = $"REVOKE {privilege} ON {table} FROM {user}";
-            modify.ExecuteQuery(query);
+            modify.ExecuteQueryByUser(query, username, password, role);
         }
     }
 }

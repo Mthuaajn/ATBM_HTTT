@@ -8,11 +8,15 @@ namespace UsersManagement
     {
         PrivilegesBUS privileges = new PrivilegesBUS();
         public string UsernameSelected { get; set; }
+        // Get tu form khac qua :v
+        public string username { get; set; }
+        public string password { get; set; }
+        public string role { get; set; }
+
         private string table;
         public GrantUser()
         {
             InitializeComponent();
-            GetTable();
         }
 
         private void exitBtn1_Click(object sender, EventArgs e)
@@ -22,6 +26,7 @@ namespace UsersManagement
 
         private void GrantUser_Load(object sender, EventArgs e)
         {
+            GetTable();
             usernameTextBox.Text = UsernameSelected;
             selectColLabel.Hide();
             selectColumnCB.Hide();
@@ -29,12 +34,12 @@ namespace UsersManagement
         private void GetTable()
         {
             selectTableComboBox.ValueMember = "Object_name";
-            selectTableComboBox.DataSource = privileges.LoadTables();
+            selectTableComboBox.DataSource = privileges.LoadTables(username, password, role);
         }
         private void GetColumn()
         {
             selectColumnCB.ValueMember = "COLUMN_NAME";
-            selectColumnCB.DataSource = privileges.LoadColumnsOfTable(table);
+            selectColumnCB.DataSource = privileges.LoadColumnsOfTable(table,username, password, role);
         }
      
 
@@ -69,7 +74,7 @@ namespace UsersManagement
 
         private void grantBtn_Click(object sender, EventArgs e)
         {
-            string username = UsernameSelected;
+            string user = UsernameSelected;
             string privilege = selectPrivilegeComboBox.Text.ToString();
             string table = selectTableComboBox.SelectedValue.ToString();
             bool withGrantOption = false;
@@ -89,11 +94,11 @@ namespace UsersManagement
                         //MessageBox.Show($"{privilege}, {table}, {username}");
                         if (withGrantOption == true)
                         {
-                            privileges.GrantUserWithGrantOption(privilege, table, username);
+                            privileges.GrantUserWithGrantOption(privilege, table, user, username, password, role);
                         }
                         else
                         {
-                            privileges.GrantUser(privilege, table, username);
+                            privileges.GrantUser(privilege, table, user, username, password, role);
                         }
                         MessageBox.Show("Privilege granted successfully.");
                         // Exit adding window
@@ -121,22 +126,22 @@ namespace UsersManagement
                         {
                             if (withGrantOption == true)
                             {
-                                privileges.GrantUserSelectToColLevelWithGrantOption(column, table, username);
+                                privileges.GrantUserSelectToColLevelWithGrantOption(column, table, user, username, password, role);
                             }
                             else
                             {
-                                privileges.GrantUserSelectToColLevel(column, table, username);
+                                privileges.GrantUserSelectToColLevel(column, table, user, username, password, role);
                             }
                         }
                         else
                         {
                             if (withGrantOption == true)
                             {
-                                privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, username);
+                                privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, user, username, password, role);
                             }
                             else
                             {
-                                privileges.GrantUserToColLevel(privilege, column, table, username);
+                                privileges.GrantUserToColLevel(privilege, column, table, user, username, password, role);
                             }
                         }
                         MessageBox.Show("Privilege granted successfully.");

@@ -7,20 +7,20 @@ namespace DAO
         Modify modify = new Modify();
         public DataTable LoadAllUsers()
         {
-            return modify.LoadTable("SELECT USERNAME AS Username, CREATED AS TIME_CREATED FROM all_users ");
+            return modify.LoadTableSys("SELECT USERNAME AS Username, CREATED AS TIME_CREATED FROM all_users ");
         }
         public DataTable LoadAllRoles()
         {
-            return modify.LoadTable("SELECT ROLE, PASSWORD_REQUIRED FROM DBA_ROLES");
+            return modify.LoadTableSys("SELECT ROLE, PASSWORD_REQUIRED FROM DBA_ROLES");
         }
         public DataTable LoadUsersByName(string userName)
         {
-            return modify.LoadTable("SELECT USERNAME AS Username, CREATED AS TIME_CREATED FROM all_users WHERE USERNAME LIKE '%" + userName + "%'");
+            return modify.LoadTableSys("SELECT USERNAME AS Username, CREATED AS TIME_CREATED FROM all_users WHERE USERNAME LIKE '%" + userName + "%'");
         }
 
         public DataTable LoadRolesByName(string roleName)
         {
-            return modify.LoadTable("SELECT ROLE, PASSWORD_REQUIRED FROM DBA_ROLES WHERE ROLE LIKE '%" + roleName + "%'");
+            return modify.LoadTableSys("SELECT ROLE, PASSWORD_REQUIRED FROM DBA_ROLES WHERE ROLE LIKE '%" + roleName + "%'");
         }
 
         public void AddUser(string userName, string passWord)

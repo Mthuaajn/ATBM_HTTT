@@ -1,4 +1,6 @@
 ﻿using System.Data;
+using System.Security.Cryptography;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using PrivilegesDAO = DAO.PrivilegesDAO;
 
 namespace BUS
@@ -6,36 +8,39 @@ namespace BUS
     public class PrivilegesBUS
     {
         PrivilegesDAO privileges = new PrivilegesDAO();
-        public DataTable LoadAllusersInTabLevel() => privileges.LoadAllUsersInTabLevel();
+        public DataTable LoadAllusersInTabLevel(string username, string password, string role) => privileges.LoadAllUsersInTabLevel(username,password, role);
 
-        public DataTable LoadAllusersInColLevel() => privileges.LoadAllUsersInColLevel();
+        public DataTable LoadAllusersInColLevel(string username, string password, string role) => privileges.LoadAllUsersInColLevel(username, password, role);
 
-        public DataTable LoadAllRolesInTabLevel() => privileges.LoadAllRolesInTabLevel();
 
-        public DataTable LoadAllRolesInColLevel() => privileges.LoadAllRolesInColLevel();
+        public DataTable LoadAllRolesInTabLevel(string username, string password, string role) => privileges.LoadAllRolesInTabLevel(username, password, role);
 
-        public DataTable FilterUsersInTabLevel(string userName) => privileges.FilterUsersInTabLevel(userName);
 
-        public DataTable FilterUsersInColLevel(string userName) => privileges.FilterUsersInColLevel((string)userName);
+        public DataTable LoadAllRolesInColLevel(string username, string password, string role) => privileges.LoadAllRolesInColLevel(username, password, role);
 
-        public DataTable FilterRolesInTabLevel(string role) => privileges.FilterRolesInTabLevel((string)role);
 
-        public DataTable FilterRolesInColLevel(string role) => privileges.FilterRolesInColLevel((string)role);
+        public DataTable FilterUsersInTabLevel(string usernameSearch, string username, string password, string role) => privileges.FilterUsersInTabLevel(usernameSearch, username, password, role);
 
-        public DataTable LoadTables() => privileges.LoadTables();
+        public DataTable FilterUsersInColLevel(string usernameSearch, string username, string password, string role) => privileges.FilterUsersInColLevel(usernameSearch, username, password, role);
 
-        public DataTable LoadColumnsOfTable(string table) => privileges.LoadColumnsOfTable(table);
+        public DataTable FilterRolesInTabLevel(string roleSearch, string username, string password, string role) => privileges.FilterRolesInTabLevel(roleSearch, username, password, role);
 
-        public void GrantUser(string privilege, string table, string user) => privileges.GrantUser(privilege, table, user);
+        public DataTable FilterRolesInColLevel(string roleSearch, string username, string password, string role) => privileges.FilterRolesInColLevel(roleSearch, username, password, role);
 
-        public void GrantUserWithGrantOption(string privilege, string tablem, string user) => privileges.GrantUserWithGrantOption((string)privilege, tablem, user);
+        public DataTable LoadTables(string username, string password, string role) => privileges.LoadTables(username, password, role);
 
-        public void GrantUserToColLevel(string privilege, string column, string table, string user) => privileges.GrantUserToColLevel(privilege, column, table, user);
-        public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table, string user) => privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, user);
+        public DataTable LoadColumnsOfTable(string table, string username, string password, string role) => privileges.LoadColumnsOfTable(table, username, password, role);
 
-        public void GrantUserSelectToColLevel(string column, string table, string user) => privileges.GrantUserSelectToColLevel((string)column, table, user);   
-        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user) => privileges.GrantUserSelectToColLevelWithGrantOption((string)column, table, user);       
-        
-        public void RevokeUser(string privilege, string table, string user) => privileges.RevokeUser(privilege, table, user);
+        public void GrantUser(string privilege, string table, string user, string username, string password, string role) => privileges.GrantUser(privilege, table, user, username, password, role);
+
+        public void GrantUserWithGrantOption(string privilege, string tablem, string user, string username, string password, string role) => privileges.GrantUserWithGrantOption((string)privilege, tablem, user, username, password, role);
+
+        public void GrantUserToColLevel(string privilege, string column, string table, string user, string username, string password, string role) => privileges.GrantUserToColLevel(privilege, column, table, user, username, password, role);
+        public void GrantUserToColLevelWithGrantOption(string privilege, string column, string table, string user, string username, string password, string role) => privileges.GrantUserToColLevelWithGrantOption(privilege, column, table, user, username, password, role);
+
+        public void GrantUserSelectToColLevel(string column, string table, string user, string username, string password, string role) => privileges.GrantUserSelectToColLevel((string)column, table, user, username, password, role);
+        public void GrantUserSelectToColLevelWithGrantOption(string column, string table, string user, string username, string password, string role) => privileges.GrantUserSelectToColLevelWithGrantOption((string)column, table, user, username, password, role);
+
+        public void RevokeUser(string privilege, string table, string user, string username, string password, string role) => privileges.RevokeUser(privilege, table, user, username, password, role);
     }
 }

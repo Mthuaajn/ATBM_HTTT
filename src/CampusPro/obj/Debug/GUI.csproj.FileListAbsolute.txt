@@ -53,3 +53,6 @@ D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GrantRole.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GrantUser.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.Privileges.resources
 D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.Login.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.AddPHANCONG_TRGDV.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.GIAOVU_UI.resources
+D:\Github\ATBM_HTTT\src\CampusPro\obj\Debug\UsersManagement.TRGDV_UI.resources

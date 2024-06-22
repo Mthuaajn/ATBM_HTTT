@@ -86,6 +86,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPHANCONG_TRGDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPHANCONG_TRGDV.Designer.cs">
+      <DependentUpon>AddPHANCONG_TRGDV.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIAOVU_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAOVU_UI.Designer.cs">
+      <DependentUpon>GIAOVU_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="GrantRole.cs">
       <SubType>Form</SubType>
@@ -154,12 +166,21 @@
     <Compile Include="SystemUsers.Designer.cs">
       <DependentUpon>SystemUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRGDV_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRGDV_UI.Designer.cs">
+      <DependentUpon>TRGDV_UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersAndRoles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UsersAndRoles.Designer.cs">
       <DependentUpon>UsersAndRoles.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddPHANCONG_TRGDV.resx">
+      <DependentUpon>AddPHANCONG_TRGDV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddRole.resx">
       <DependentUpon>AddRole.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAOVU_UI.resx">
+      <DependentUpon>GIAOVU_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GrantRole.resx">
       <DependentUpon>GrantRole.cs</DependentUpon>
@@ -202,6 +226,9 @@
     <EmbeddedResource Include="SystemUsers.resx">
       <DependentUpon>SystemUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TRGDV_UI.resx">
+      <DependentUpon>TRGDV_UI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsersAndRoles.resx">
       <DependentUpon>UsersAndRoles.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +256,10 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{c798dcf1-3f87-4b58-a14d-e05911387333}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{134b5fed-cc98-4313-be12-26217b496b9a}</Project>
+      <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{5d3dac80-22bb-492b-9bfa-38fa6c742486}</Project>

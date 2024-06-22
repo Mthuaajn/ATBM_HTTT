@@ -60,5 +60,9 @@ namespace UsersManagement
             }
         }
 
+        private void AddRole_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

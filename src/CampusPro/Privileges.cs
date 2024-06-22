@@ -8,6 +8,12 @@ namespace UsersManagement
     public partial class Privileges : Form
     {
         PrivilegesBUS privileges = new PrivilegesBUS();
+
+        // Get tu form khac qua :v
+        public string username { get; set; }
+        public string password { get; set; }
+        public string role { get; set; }
+
         private string UserName;
         private string RoleName;
         public Privileges()
@@ -26,7 +32,7 @@ namespace UsersManagement
         {
             try
             {
-                usersPrivsDGV.DataSource = privileges.LoadAllusersInTabLevel();
+                usersPrivsDGV.DataSource = privileges.LoadAllusersInTabLevel(username,password, role);
             }
             catch (Exception ex)
             {
@@ -37,7 +43,7 @@ namespace UsersManagement
         {
             try
             {
-                usersPrivsDGV.DataSource = privileges.LoadAllusersInColLevel();
+                usersPrivsDGV.DataSource = privileges.LoadAllusersInColLevel(username, password, role);
             }
             catch (Exception ex)
             {
@@ -48,7 +54,7 @@ namespace UsersManagement
         {
             try
             {
-                rolesPrivsDGV.DataSource = privileges.LoadAllRolesInTabLevel();
+                rolesPrivsDGV.DataSource = privileges.LoadAllRolesInTabLevel(username, password, role);
             }
             catch (Exception ex)
             {
@@ -59,7 +65,7 @@ namespace UsersManagement
         {
             try
             {
-                rolesPrivsDGV.DataSource = privileges.LoadAllRolesInColLevel();
+                rolesPrivsDGV.DataSource = privileges.LoadAllRolesInColLevel(username,password, role);
             }
             catch (Exception ex)
             {
@@ -148,11 +154,11 @@ namespace UsersManagement
             }
             else if (toTabCheckBox1.Checked == true)
             {
-                usersPrivsDGV.DataSource = privileges.FilterUsersInTabLevel(userName);
+                usersPrivsDGV.DataSource = privileges.FilterUsersInTabLevel(userName, username, password, role);
             }
             else
             {
-                usersPrivsDGV.DataSource = privileges.FilterUsersInColLevel(userName);
+                usersPrivsDGV.DataSource = privileges.FilterUsersInColLevel(userName, username, password, role);
             }
         }
 
@@ -179,11 +185,11 @@ namespace UsersManagement
             }
             else if (totableCheckBox2.Checked == true)
             {
-                rolesPrivsDGV.DataSource = privileges.FilterRolesInTabLevel(roleName);
+                rolesPrivsDGV.DataSource = privileges.FilterRolesInTabLevel(roleName, username, password, role);
             }
             else
             {
-                rolesPrivsDGV.DataSource = privileges.FilterRolesInColLevel(roleName);
+                rolesPrivsDGV.DataSource = privileges.FilterRolesInColLevel(roleName, username, password, role);
             }
         }
 
@@ -213,6 +219,9 @@ namespace UsersManagement
             if (usersPrivsDGV.SelectedRows.Count > 0)
             {
                 GrantUser target = new GrantUser();
+                target.username = username;
+                target.password = password;
+                target.role = role;
                 target.UsernameSelected = UserName;
                 target.Show();
             }
@@ -224,7 +233,7 @@ namespace UsersManagement
         // Revoking in this form
         private void revokeBtn1_Click(object sender, EventArgs e)
         {
-            string username = usersPrivsDGV.SelectedRows[0].Cells[0].Value.ToString();
+            string usernameSearch = usersPrivsDGV.SelectedRows[0].Cells[0].Value.ToString();
             string privilege = usersPrivsDGV.SelectedRows[0].Cells[3].Value.ToString();
             string table = usersPrivsDGV.SelectedRows[0].Cells[1].Value.ToString();
             //string column = "";
@@ -240,7 +249,7 @@ namespace UsersManagement
                 {
                     // output test
                     //MessageBox.Show($"Revoke {privilege} ON {table} FROM {username}");
-                    privileges.RevokeUser(privilege, table, username);
+                    privileges.RevokeUser(privilege, table, usernameSearch, username, password, role);
                     MessageBox.Show("User revoked successfully.");
                 }
                 catch (Exception ex)
@@ -258,6 +267,9 @@ namespace UsersManagement
             if (rolesPrivsDGV.SelectedRows.Count > 0)
             {
                 GrantRole target = new GrantRole();
+                target.username = username;
+                target.password = password;
+                target.role = role;
                 target.RoleSelected = RoleName;
              
                 target.Show();
@@ -270,7 +282,7 @@ namespace UsersManagement
 
         private void revokeBtn2_Click(object sender, EventArgs e)
         {
-            string role = rolesPrivsDGV.SelectedRows[0].Cells[0].Value.ToString();
+            string roleName = rolesPrivsDGV.SelectedRows[0].Cells[0].Value.ToString();
             string privilege = rolesPrivsDGV.SelectedRows[0].Cells[3].Value.ToString();
             string table = rolesPrivsDGV.SelectedRows[0].Cells[1].Value.ToString();
 
@@ -285,7 +297,7 @@ namespace UsersManagement
                 {
                     // output test
                     //MessageBox.Show($"Revoke {privilege} ON {table} FROM {role}");
-                    privileges.RevokeUser(privilege, table, role);
+                    privileges.RevokeUser(privilege, table, roleName, username, password, role);
                     MessageBox.Show("Role revoked successfully.");
                 }
                 catch (Exception ex)
@@ -309,6 +321,10 @@ namespace UsersManagement
         private void systemUsersBtn_Click(object sender, EventArgs e)
         {
             SystemUsers obj = new SystemUsers();
+            // set qua system users
+            obj.username = username;
+            obj.password = password;
+            obj.role = role;
             obj.Show();
             this.Hide();
         }
@@ -316,6 +332,9 @@ namespace UsersManagement
         private void usersAndRolesBtn_Click(object sender, EventArgs e)
         {
             UsersAndRoles obj = new UsersAndRoles();
+            obj.username = username;
+            obj.password = password;
+            obj.role = role;// set qua users and roles
             obj.Show();
             this.Hide();
         }

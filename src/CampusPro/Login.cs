@@ -28,6 +28,12 @@ namespace UsersManagement
             {
                 MessageBox.Show("Connected successfully!");
                 SystemUsers obj = new SystemUsers();
+                // Set qua privileges
+                obj.username = username;
+                obj.password = password;
+                obj.role = role;
+
+                // Mo main
                 obj.Show();
                 this.Hide();
             }

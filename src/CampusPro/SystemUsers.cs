@@ -9,6 +9,13 @@ namespace UsersManagement
     {
         private SystemUsersBUS systemUsers; // Đối tượng từ BUS để xử lý logic
         private string UserName;
+
+        // Get tu ben login qua :v
+        public string username { get; set; }
+        public string password { get; set; }
+        public string role { get; set; }
+
+
         public SystemUsers()
         {
             InitializeComponent();
@@ -113,6 +120,10 @@ namespace UsersManagement
         private void usersAndRolesBtn_Click(object sender, EventArgs e)
         {
             UsersAndRoles obj = new UsersAndRoles();
+            // set qua users and roles
+            obj.username = username;
+            obj.password = password;
+            obj.role = role;
             this.Hide();
             obj.Show();
         }
@@ -120,6 +131,10 @@ namespace UsersManagement
         private void privilegesBtn_Click(object sender, EventArgs e)
         {
             Privileges obj = new Privileges();
+            // set qua privileges
+            obj.username = username;
+            obj.password = password;
+            obj.role = role;
             obj.Show();
             this.Hide();
         }

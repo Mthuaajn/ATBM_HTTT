@@ -8,7 +8,11 @@ namespace UsersManagement
     public partial class UsersAndRoles : Form
     {
         UsersAndRolesBUS usersAndRoles = new UsersAndRolesBUS();
-        
+        // Get tu form khac qua :v
+        public string username { get; set; }
+        public string password { get; set; }
+        public string role { get; set; }
+
         public UsersAndRoles()
         {
             InitializeComponent();
@@ -214,6 +218,11 @@ namespace UsersManagement
         private void systemUsersBtn_Click(object sender, EventArgs e)
         {
             SystemUsers obj = new SystemUsers();
+            // Set qua system users
+            obj.username = username;
+            obj.password = password;
+            obj.role = role;
+
             this.Hide();
             obj.Show();
         }
@@ -221,6 +230,9 @@ namespace UsersManagement
         private void privilegesBtn_Click(object sender, EventArgs e)
         {
             Privileges obj = new Privileges();
+            obj.username = username;
+            obj.password = password;
+            obj.role = role;// Set qua privileges
             obj.Show();
             this.Hide();
         }

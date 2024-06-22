@@ -8,12 +8,16 @@ namespace UsersManagement
     {
         PrivilegesBUS privileges = new PrivilegesBUS();
         public string RoleSelected { get; set; }
+        // Get tu form khac qua :v
+        public string username { get; set; }
+        public string password { get; set; }
+        public string role { get; set; }
+
         private string table;
         //public bool IsCol { get; set; }
         public GrantRole()
         {
             InitializeComponent();
-            GetTable();
         }
 
         private void exitBtn1_Click(object sender, EventArgs e)
@@ -23,6 +27,7 @@ namespace UsersManagement
 
         private void GrantRole_Load(object sender, EventArgs e)
         {
+            GetTable();
             roleTextBox.Text = RoleSelected;
             selectColLabel.Hide();
             selectColumnCB.Hide();
@@ -31,13 +36,13 @@ namespace UsersManagement
         private void GetTable()
         {
             selectTableComboBox.ValueMember = "Object_name";
-            selectTableComboBox.DataSource = privileges.LoadTables();
+            selectTableComboBox.DataSource = privileges.LoadTables(username, password, role);
         }
 
         private void GetColumn()
         {
             selectColumnCB.ValueMember = "COLUMN_NAME";
-            selectColumnCB.DataSource = privileges.LoadColumnsOfTable(table);
+            selectColumnCB.DataSource = privileges.LoadColumnsOfTable(table, username, password, role);
         }
 
         private void grantToColCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -73,7 +78,7 @@ namespace UsersManagement
 
         private void grantBtn_Click(object sender, EventArgs e)
         {
-            string username = RoleSelected;
+            string user = RoleSelected;
             string privilege = selectPrivilegeComboBox.Text.ToString();
             string table = selectTableComboBox.SelectedValue.ToString();
             if (grantToColCheckBox.Checked == false)
@@ -87,7 +92,7 @@ namespace UsersManagement
                         // output test
                         //MessageBox.Show($"{privilege}, {table}, {username}");
          
-                        privileges.GrantUser(privilege, table, username);
+                        privileges.GrantUser(privilege, table, user, username, password, role);
                         MessageBox.Show("Privilege granted successfully.");
                         // Exit adding window
                         this.Hide();
@@ -112,11 +117,11 @@ namespace UsersManagement
                         // Oracle k cho phan quyen truc tiep select ma phai thong qua view
                         if (privilege == "SELECT")
                         {
-                            privileges.GrantUserSelectToColLevel(column, table, username);
+                            privileges.GrantUserSelectToColLevel(column, table, user, username, password, role);
                         }
                         else
                         {
-                            privileges.GrantUserToColLevel(privilege, column, table, username);
+                            privileges.GrantUserToColLevel(privilege, column, table, user, username, password, role);
                         }
                         MessageBox.Show("Privilege granted successfully.");
                         // Exit adding window

@@ -10,13 +10,12 @@ namespace BUS
 {
     public class LoginBUS
     {
-        LoginDAO newLogin = new LoginDAO();
         public bool Authenticate(string username, string password, string role)
         {
             // Used to test the connection
             MessageBox.Show($"{username}, {password}, {role}");
 
-            using (var conn = newLogin.GetAppConnection(username, password, role))
+            using (var conn = LoginDAO.GetAppConnection(username, password, role))
             {
                 try
                 {
