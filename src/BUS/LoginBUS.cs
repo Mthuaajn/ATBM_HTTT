@@ -10,6 +10,7 @@ namespace BUS
 {
     public class LoginBUS
     {
+        LoginDAO login = new LoginDAO();
         public bool Authenticate(string username, string password, string role)
         {
             // Used to test the connection
@@ -22,7 +23,7 @@ namespace BUS
                     conn.Open();
                     // Thực hiện các thao tác với cơ sở dữ liệu
                     //Console.WriteLine("Kết nối thành công!");
-                    return true;
+                    return true && login.IsCorrectRole(username, password, role);
                 }
                 catch (Exception ex)
                 {

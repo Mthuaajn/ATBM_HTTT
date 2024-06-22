@@ -24,7 +24,7 @@ namespace UsersManagement
             password = passwordTextBox.Text.ToString();
             role = roleComboBox.Text.ToString();
 
-            if (login.Authenticate(username, password, role) && role == "SYSDBA")   // Go to Main form DBA UI
+            if (login.Authenticate(username.ToUpper(), password, role) && role == "DBA")   // Go to Main form DBA UI
             {
                 MessageBox.Show("Connected successfully!");
                 SystemUsers obj = new SystemUsers();

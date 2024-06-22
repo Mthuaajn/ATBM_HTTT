@@ -90,7 +90,7 @@
             "Giáo vụ",
             "Trưởng đơn vị",
             "Trưởng khoa",
-            "SYSDBA"});
+            "DBA"});
             this.roleComboBox.Location = new System.Drawing.Point(122, 308);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(121, 24);
